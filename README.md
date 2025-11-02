@@ -12,9 +12,13 @@ Spatial hydroxymethylation analysis pipeline
 All codes in Spatial_methyl_pipeline/spatial_template_cmd_scaled.ibp.sh contains steps of data preprocessing, read alignment, and hydroxymethylation extraction, while the files in /bins and /python_script are invoked scripts for supporting the normal operation of the core script spatial_template_cmd_scaled.ibp.sh. It should be emphasized that the user needs to substitute the sample name, fastq file path, the number of pixels, and the spatial location list with those you use in the corresponding brace, as shown below.
 
 sed -e "s/sample_name/${name}/g" spatial_template_cmd_scaled.ibp.sh > ${name}_spatial_template_cmd_scaled.ibp.sh
+
 sed -i "s/\/dir/\/${dir}/g" ${name}_spatial_template_cmd_scaled.ibp.sh
+
 sed -i "s/all_cells/${all_cells}/g" ${name}_spatial_template_cmd_scaled.ibp.sh
+
 sed -i "s/each_part/${each_part}/g" ${name}_spatial_template_cmd_scaled.ibp.sh
+
 sed -i "s/combine_barcode.round2round1_index1_index2.v3_big_hydroxymethylation.txt/${dir}_ref_barcode.txt/g" ${name}_spatial_template_cmd_scaled.ibp.sh
 
 Eventually, you should run the following command on a Linux system.
