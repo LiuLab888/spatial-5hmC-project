@@ -75,8 +75,6 @@ Spatial RNA analysis
 #######################
 Due to the availability of comprehensive spatial RNA analysis methods currently, we perform the ST pipeline, which is widely used to perform data processing at spatial transcriptomics. Our similar processes are shown in spatial_RNA_analysis/, and more details about the developer can be found at https://github.com/jfnavarro/st_pipeline. 
 
-###################################
-Spatial DNA methylation analysis
-###################################
+#### Spatial DNA methylation analysis ####
 The bioinformatic analysis of spatial 5mC-seq data was performed as described at  https://github.com/LiuLab888/spatial-5mC-project
 
